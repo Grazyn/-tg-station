@@ -1,8 +1,8 @@
 /proc/lizard_name(gender)
 	if(gender == MALE)
-		return "[pick(GLOB.lizard_names_male)]-[pick(GLOB.lizard_names_male)]"
+		return "[pick(GLOB.lizard_names_verbs)]-The-[pick(GLOB.lizard_names_nouns)]"
 	else
-		return "[pick(GLOB.lizard_names_female)]-[pick(GLOB.lizard_names_female)]"
+		return "[pick(GLOB.lizard_names_verbs)]-The-[pick(GLOB.lizard_names_nouns)]"
 
 /proc/ethereal_name()
 	var/tempname = "[pick(GLOB.ethereal_names)] [random_capital_letter()]"
